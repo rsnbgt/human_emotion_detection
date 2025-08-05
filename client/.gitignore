@@ -3,6 +3,16 @@ venv/
 __pycacbe__/
 *.pyc
 
+# Ignore model files
+*.h5
+*.pkl
+*.pt
+
+# Ignore large binaries
+*.pyd
+*.dll
+
+
 # Logs
 logs/
 *.log
