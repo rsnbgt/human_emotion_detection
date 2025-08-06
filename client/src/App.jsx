@@ -22,7 +22,7 @@ function App() {
 
     try{
       setLoading(true);
-      const res=await axios.post("http://localhost:8000/predict",formData,{
+      const res=await axios.post("https://huggingface.co/spaces/rsnbgt/emotion-detector",formData,{
         headers:{"Content-Type":"multipart/form-data"},
       });
       setPrediction(res.data.prediction);
